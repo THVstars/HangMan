@@ -14,7 +14,7 @@ public class Hangman {
 
         System.out.println("1 or 2 players?");
         String players = keyboard.nextLine();
-        String word = ""; // the word variable must be declared outside/above the if statement so that the rest of the main method (outside the if statement) can access it. it is later initialized with a value inside the if statement.
+        String word; // the word variable must be declared outside/above the if statement so that the rest of the main method (outside the if statement) can access it. it is later initialized with a value inside the if statement.
 
         if (players.equals("1")) {
             Scanner scanner = new Scanner(new File("C:\\Users\\Empre\\Downloads\\words_alpha.txt")); // Scanner input is this file full of words.
